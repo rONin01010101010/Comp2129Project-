@@ -1,0 +1,14 @@
+C:\Users\OWNER\source\repos\2129Proj\2129Proj\bin\Debug\net8.0\2129Proj.exe
+C:\Users\OWNER\source\repos\2129Proj\2129Proj\bin\Debug\net8.0\2129Proj.deps.json
+C:\Users\OWNER\source\repos\2129Proj\2129Proj\bin\Debug\net8.0\2129Proj.runtimeconfig.json
+C:\Users\OWNER\source\repos\2129Proj\2129Proj\bin\Debug\net8.0\2129Proj.dll
+C:\Users\OWNER\source\repos\2129Proj\2129Proj\bin\Debug\net8.0\2129Proj.pdb
+C:\Users\OWNER\source\repos\2129Proj\2129Proj\obj\Debug\net8.0\2129Proj.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\OWNER\source\repos\2129Proj\2129Proj\obj\Debug\net8.0\2129Proj.AssemblyInfoInputs.cache
+C:\Users\OWNER\source\repos\2129Proj\2129Proj\obj\Debug\net8.0\2129Proj.AssemblyInfo.cs
+C:\Users\OWNER\source\repos\2129Proj\2129Proj\obj\Debug\net8.0\2129Proj.csproj.CoreCompileInputs.cache
+C:\Users\OWNER\source\repos\2129Proj\2129Proj\obj\Debug\net8.0\2129Proj.dll
+C:\Users\OWNER\source\repos\2129Proj\2129Proj\obj\Debug\net8.0\refint\2129Proj.dll
+C:\Users\OWNER\source\repos\2129Proj\2129Proj\obj\Debug\net8.0\2129Proj.pdb
+C:\Users\OWNER\source\repos\2129Proj\2129Proj\obj\Debug\net8.0\2129Proj.genruntimeconfig.cache
+C:\Users\OWNER\source\repos\2129Proj\2129Proj\obj\Debug\net8.0\ref\2129Proj.dll
