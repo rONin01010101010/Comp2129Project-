@@ -70,55 +70,103 @@ namespace _2129Proj
         }
 
 
-        public Flight deleteFlight(int deleteNumber)
+        public Flight deleteFlight(int deleteNum) //edit this seems too long of code
         {
-            //handling for flight number user enters 
-            Console.WriteLine("Please enter the number of the flight you want to delete: ");
-            Console.ReadLine();
             if (Choice == 3)
             {
-                for (int i = 0; i < numOfFlights; i++)
+                Console.WriteLine("Please enter Flight Number: ");
+                var selectedNum = Console.ReadLine(); //read user input of the flight number 
+
+                if (selectedNum == null) //if statement is used to check if user has entered a flight number 
                 {
-                    if (flightList[i].flightNumber == deleteNumber)
+                    Console.WriteLine("Please provide a flight number.");
+                    return null;
+                }
+
+                if (int.TryParse(selectedNum, out int flightNumber)) // line converts the selected num from a string to an integer called flight number 
+                {
+                    if (flightNumber == deleteNum)
                     {
-                        
+                        int indexDelete = 0;
+                        for (int i = 0; i < numOfFlights; i++)
+                        {
+                            if (flightList[i].flightNumber == deleteNum)
+                            {
+                                indexDelete = i;
+                                break;
+                            }
+                        }
+
+                        if (indexDelete != -1)
+                        {
+
+                            Flight deleteFlight = flightList[indexDelete];
+                            Flight[] newFlightList = new Flight[numOfFlights - 1];
+
+                            for (int j = 0; j < indexDelete; j++)
+                            {
+                                newFlightList[j] = flightList[j];
+                            }
+
+                            for (int k = indexDelete + 1; k < numOfFlights; k++)
+                            {
+                                newFlightList[k - 1] = flightList[k];
+                            }
+
+
+                            flightList = newFlightList;
+                            numOfFlights = flightList.Length;
+
+                            return deleteFlight;
+                        }
+                        else
+                        {
+                            Console.WriteLine("Flight not found.");
+                        }
+                    }
+                    else
+                    {
+                        Console.WriteLine("The provided flight number does not match.");
                     }
                 }
+                else
+                {
+                    Console.WriteLine("Invalid flight number.");
+                }
             }
+
+            return null;
         }
 
-        public Flight deleteFlight(int deleteNum)
+        public Flight ViewParticularFlight(int flightNum)
         {
-            if (Choice == 3)
+            if (Choice == 4) { 
+
+            for (int i = 0; i <= numOfFlights; i++)
             {
-                Console.WriteLine("Pleace enter Flight Number: ");
-                var selectedNum = Console.ReadLine();
-                if(selectedNum == null)
-                {
-                    Console.WriteLine("Please put in flight number.");
+                    if (flightList[i].flightNumber == flightNum)
+                    {
+                        Console.WriteLine(flightList[i]);
+                    }
 
-                }
-                else if(selectedNum == deleteNum.ToString()) 
-                {
-                        for (int i = 0; i < numOfFlights; i++) 
-                        { 
-                            
-                        
-                        }
-                }
-            
+                   
             }
+        }
+            else
+            {
+               return null;
+            }
+               return null;
+        
+        }
+
+        //public Flight BackToMainMenu ()
+        //{ 
+
+        //}
+
     }
 
-
     }
- 
-    
-
-
-
-
-
-}
 
 

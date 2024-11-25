@@ -22,6 +22,12 @@ namespace _2129Proj
             this.bookingNumber = bookingNumber;
         }
 
+        public Bookings(string date, Customer customer, int bookingNumber, Flight flight)
+        {
+            this.date = date;
+            this.customer = customer;
+            this.bookingNumber = bookingNumber;
+        }
 
         public string getDate()
         {
